@@ -13,6 +13,7 @@ class StringFoo:
     def print_string(self):
         print(f"{self.message.upper()}")
 
+
 str_foo = StringFoo("mayonase".upper())
-str_foo.set_string("ur mom")
+str_foo.set_string("do re mi fa sol la ti do")
 str_foo.print_string()
