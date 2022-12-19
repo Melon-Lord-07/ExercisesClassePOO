@@ -1,8 +1,7 @@
 """
 Sandra Nitchi, 2022
 exercise 4
-...
-
+Ce code créé une classe Hero avec le force d'attaque, de defnse, HP, et nom du Héros. Cette classe contient egalement des methodes pour attaquer, recevoir des dommages, determiner si l'héro est en vie, et afficher les nouveaux statistiques du héro
 """
 import random
 
@@ -31,7 +30,8 @@ class Hero:
 
 hero = Hero("Jeffrey the 3rd")
 hero.afficher_tout()
-print(f"\nAttaque: {hero.action_attaque()}")
+print(f"\nForce de l'attaque du héro: {hero.action_attaque()}")
 hero.recevoir_dommage(10)
-print(f"En vie: {hero.est_vivant()}")
+print(f"\nLe héro est attaqué par un adversaire."
+      f"\nEn vie: {hero.est_vivant()}")
 hero.afficher_tout()
