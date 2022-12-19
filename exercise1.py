@@ -1,6 +1,7 @@
 """
 Sandra Nitchi, 2022
 exercise 1
+ce code créé une class StringFoo qui imprime une message en lettres majuscules
 """
 
 class StringFoo:
