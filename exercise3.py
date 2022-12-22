@@ -24,4 +24,3 @@ class Cercle:
 
 cercle = Cercle(3)
 cercle.afficher_infos()
-

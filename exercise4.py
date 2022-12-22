@@ -23,6 +23,7 @@ class Hero:
 
     def est_vivant(self):
         return self.points_vie > 0
+
     def afficher_tout(self):
         print(f"\nNom: {self.nom_hero}"
               f"\nHP: {self.points_vie}"
