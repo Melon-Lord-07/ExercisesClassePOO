@@ -1,9 +1,7 @@
 """
 Sandra Nitchi, 2022
-exercise 4
-Ce code créé une classe Hero avec le force d'attaque, de defnse, HP, et nom du Héros.
-Cette classe contient egalement des methodes pour attaquer, recevoir des dommages, determiner si l'héro est en vie,
-et afficher les nouveaux statistiques du héro
+exercise 6
+ce code cree un classe hero presque identique a celle de l'exercise 4 sauf que celle la inclut l'intelligence
 """
 import random
 
@@ -14,6 +12,7 @@ class Hero:
         self.points_vie = random.randint(1, 10) + random.randint(1, 10)
         self.force_attaque = random.randint(1, 6)
         self.force_defense = random.randint(1, 6)
+        self.intelligence = random.randint(1, 20)
 
     def action_attaque(self):
         return self.force_attaque + random.randint(1, 6)
@@ -23,16 +22,14 @@ class Hero:
 
     def est_vivant(self):
         return self.points_vie > 0
+
     def afficher_tout(self):
         print(f"\nNom: {self.nom_hero}"
               f"\nHP: {self.points_vie}"
               f"\nForce attaque: {self.force_attaque}"
-              f"\nForce défense: {self.force_defense}")
+              f"\nForce défense: {self.force_defense}"
+              f"\nIntelligence: {self.intelligence}")
 
 
 hero = Hero("Jeffrey the 3rd")
-hero.afficher_tout()
-print(f"\nAttaque: {hero.action_attaque()}")
-hero.recevoir_dommage(10)
-print(f"En vie: {hero.est_vivant()}")
 hero.afficher_tout()
