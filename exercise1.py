@@ -4,6 +4,7 @@ exercise 1
 ce code créé une class StringFoo qui imprime une message en lettres majuscules
 """
 
+
 class StringFoo:
     def __init__(self, message):
         self.message = message
